@@ -1,0 +1,15 @@
+# User Configuration
+config.env
+.env
+
+# SSH Master Sockets
+*.sock
+
+# Logs
+*.log
+
+# Python/IDE Caches
+__pycache__/
+.vscode/
+.idea/
+.DS_Store
