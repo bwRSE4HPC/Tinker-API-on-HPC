@@ -41,6 +41,11 @@ fi
 echo "Job submitted successfully! Job ID: $JOB_ID"
 
 cleanup() {
+    # This method cancels the job when this script is stopped.
+
+    # Prevent the trap from triggering twice
+    trap - SIGINT EXIT
+
     echo ""
     echo "Caught termination signal. Cleaning up..."
 
