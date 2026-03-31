@@ -41,7 +41,7 @@ echo "Cloning the SkyRL repository and submitting setup job..."
 ssh -S ${SSH_SOCKET} ${HPC_USER}@${HPC_HOST} "
 if [ ! -d '${REMOTE_SKYRL_DIR}/.git' ]
 then
-    git clone https://github.com/NovaSky-AI/SkyRL.git ${REMOTE_SKYRL_DIR}
+    git clone --depth 1 https://github.com/NovaSky-AI/SkyRL.git ${REMOTE_SKYRL_DIR}
 fi
 cd ${REMOTE_JOB_DIR}
 sbatch --partition=${SETUP_PARTITION} hpc_setup.sbatch
