@@ -1,14 +1,13 @@
-```markdown
 
-# 🚧  This project is currently under construction and untested. 🚧
+> 🚧  This project is currently under construction and untested. 🚧
 
+# Tinker API on HPC
+**An orchestration toolkit for running [SkyRL](https://github.com/NovaSky-AI/SkyRL) on HPCs to get a Tinker API**
 
-# Tinker API on bwHPC - Setup and Execution Guide
-
-This repository contains the orchestration scripts to deploy and use the SkyRL Tinker API on the HPC HPC cluster using Apptainer and Slurm. It establishes a secure SSH tunnel, allowing local execution of Tinker SDK scripts against the compute nodes.
+> **Disclaimer:** This project is not affiliated with Tinker by Thinking Machines Lab, it merely supports using the public Tinker API.
 
 ## Prerequisites
-- Active HPC account and bwHPC project workspace.
+- Active HPC account (and project workspace, depending on the HPC).
 - Local Unix-like environment (Linux, macOS, or WSL) with bash and SSH configured.
 - Python environment with the `tinker` SDK installed.
 
